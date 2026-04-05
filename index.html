@@ -408,8 +408,8 @@
   <div class="contact-wrap">
     <p>I'm currently open to new opportunities — internship, full-time or contract. Feel free to reach out!</p>
     <div class="contact-links">
-      <a href="/cdn-cgi/l/email-protection#84fdebf1f7f7e1e2aae1e8e2e1efefe5eafdc4e3e9e5ede8aae7ebe9" class="contact-link">
-        <span>📧</span><span><span class="__cf_email__" data-cfemail="3841574d4b4b5d5e165d545e5d5353595641785f55595154165b5755">[email&#160;protected]</span></span>
+      <a href="mailto:youssef.elfekkany@gmail.com" class="contact-link">
+        <span>📧</span><span>youssef.elfekkany@gmail.com</span>
       </a>
       <a href="https://linkedin.com/in/youssef-el-fakkany01" target="_blank" class="contact-link">
         <span>💼</span><span>LinkedIn</span>
@@ -421,7 +421,7 @@
         <span>📞</span><span>+212 700 570 486</span>
       </a>
     </div>
-    <a href="/cdn-cgi/l/email-protection#bac3d5cfc9c9dfdc94dfd6dcdfd1d1dbd4c3faddd7dbd3d694d9d5d7" class="btn-primary">Send me an email ↗</a>
+    <a href="mailto:youssef.elfekkany@gmail.com" class="btn-primary">Send me an email ↗</a>
   </div>
 </section>
 
@@ -463,4 +463,15 @@
         e.target.style.transform = 'translateY(0)';
       }
     });
-  }, 
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.skill-card, .project-card, .about-grid').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
